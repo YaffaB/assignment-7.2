@@ -13,17 +13,15 @@ def displayIntro():
 	you see two caves. In one cave, the dragon is friendly
 	and will share his treasure with you. The other dragon
 	is greedy and hungry, and will eat you on sight.''')
-	print()
+displayIntro()
 
 def chooseCave():
 	cave = input('Which cave will you go into? (1 or 2)')
-	while cave !='1' and cave !='2':
-		
-		
+	while cave !='1' and cave !='2':	
 
 	return caves
-
-def checkCave(chosenCave):
+chooseCave()
+def checkCave(chooseCave):
 	print('You approach the cave...')
 	#sleep for 2 seconds
 	time.sleep(2)
@@ -40,7 +38,7 @@ def checkCave(chosenCave):
 		print('Gives you his treasure!')
 	else:
 		print ('Gobbles you down in one bite!')
-
+checkCave(choseCave)
 playAgain = input('Do you want to play again? (yes or no)')
 while playAgain == 'yes' or playAgain == 'y':
 	displayIntro()
@@ -49,4 +47,6 @@ while playAgain == 'yes' or playAgain == 'y':
    
 	if playAgain == "no":
 		print("Thanks for playing")
+		
+
 
